@@ -1,0 +1,40 @@
+# To find if a number is prime/not prime
+
+a = 179
+
+if(a%%2==0) 
+  print("Prime") 
+else 
+  for(i in a/2:2)
+  {
+    if(a%%i==0) 
+      print("Not Prime") 
+    else print("Prime")
+  }
+  
+ # To find if a & e both occur together
+ 
+a <- "Under"
+
+for(i in 1:nchar(a)) 
+{
+  if(substr(a,i,i) == "a") 
+  {
+    for(i in 1:nchar(a)) 
+    {
+      if(substr(a,i,i) == "e") 
+        print("a & e both exists")
+    } 
+  } 
+  else
+  {
+    if(substr(a,i,i) == "e") 
+    {
+      for(i in i:nchar(a)) 
+      {
+        if(substr(a,i,i) == "a") 
+          print("a & e both exists")
+      } 
+    }
+  }
+}
