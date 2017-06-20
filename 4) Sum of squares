@@ -1,0 +1,14 @@
+sum_of_cubes <- function(n){
+  while (i <= n )
+  {
+    a <- a + (i*i*i)
+    i = i + 1
+  }
+  return(a)
+}
+
+#Output
+> sum_of_cubes(3)
+[1] 36
+> sum_of_cubes(2)
+[1] 9
